@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>第一个模板文件</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='site.css') }}">
+</head>
+<body>
+    <h1>{{content}}</h1>
+<nav>
+    <a href="{{ url_for('.service') }}">Service</a>
+    <a href="{{ url_for('.about') }}">About</a>
+</nav>
+</body>
+</html>
